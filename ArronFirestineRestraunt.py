@@ -4,7 +4,7 @@ from tkinter import messagebox
 
 
 main=Tk()
-main.geometry("1350x750+0+0")
+main.geometry("1350x750")
 main.title("Arron Firestine Restraunt")
 
 header = Frame (main, width = 1350 , height = 100, bd= 12, relief = "sunken" )
