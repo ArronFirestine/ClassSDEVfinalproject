@@ -9,12 +9,12 @@ from tkinter import messagebox
 #I like to call it main more than root. 
 main=Tk() 
 main.geometry("1350x450") # geting the starting size
-main.title("Arron Firestine Restraunt") # Name of title of the GUI
+main.title("Arron Firestine Restaurant") # Name of title of the GUI
 
 #  Creating the header frame
 header = Frame (main, width = 1350 , height = 100, bd= 12, relief = "sunken" ) # I really like the look of sunken 
 header.pack (side=TOP) # This puts the header at the top of the GUI
-title= Label(header, font=("time", 40 ), text="Arron Firestine Restraunt of Fun and Imagination Menu") # This put the text in the header and my favorite font is time new roman
+title= Label(header, font=("time", 40 ), text="Arron Firestine Restaurant of Fun and Imagination Menu") # This put the text in the header and my favorite font is time new roman
 title.grid( row = 0, column = 0) # This puts the text in row 0 and column 0 
 
 # Created a main frame to go below the header and take up all the space to put three frames those three frames are left, middle, and Right
@@ -241,13 +241,13 @@ sidestitle= Label(Leftframe, font=("time", 20, "bold" ), text="                S
 sidestitle.grid( row = 0, column = 0)
 
 # For each side there is going to be a checkbutton and entry. 
-sides1 = Checkbutton(Leftframe, text = "frenchfries  3.50$", variable=variable1, onvalue=1, # This has the price and the name of the side and seting up the onvalue and the off value
+sides1 = Checkbutton(Leftframe, text = "french fries  3.50$", variable=variable1, onvalue=1, # This has the price and the name of the side and seting up the onvalue and the off value
                      offvalue = 0, font=("time", 14, ), command = Aside1).grid(row = 1, column = 0, sticky=W)# All the sides are sticky to the west and they all go up by 1 for each row and if click the command runs. 
 textsides1 = Entry(Leftframe, font=("time", 14, ), textvariable = valuesides1,# the textvariable will be the same as valuesides so what ever is typed into the text box will set the value of the sides
                     width = 4, justify = "center", state= DISABLED) # It starts off as disabled but clicking the button will set it to normal. Justify center set things in the entry box to the center of it.
 textsides1.grid(row = 1 , column= 1) # all the text entry boxes will be in column 1 and go up by 1 for each row
 #nothing chnages except the rows, text, textvariable, and the variable
-sides2 = Checkbutton(Leftframe, text = "tatertots  3.50$", variable=variable2, onvalue=1,
+sides2 = Checkbutton(Leftframe, text = "tater tots  3.50$", variable=variable2, onvalue=1,
                      offvalue = 0, font=("time", 14, ), command = Bside2).grid(row = 2, column =0, sticky=W)
 textsides2 = Entry(Leftframe, font=("time", 14, ), textvariable = valuesides2,
                     width = 4, justify = "center", state= DISABLED)
